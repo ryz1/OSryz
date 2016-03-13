@@ -1,6 +1,8 @@
 Report for Lab1
 计34 茹逸中 2013011375
+
 **练习1: 理解通过make生成执行文件的过程。**
+
 **1.1 如何生成ucore.img**
 
 注意到，生成ucore.img需要bootblock和kernel，即操作系统的启动模块和核心模块。
