@@ -1,0 +1,22 @@
+P1	P2	P3	S
+			START	STA		sSTART
+RT
+START
+		Psem
+		Vsem
+	Psem
+	Vsem
+	EXIT
+		Psem
+		Vsem
+		Psem
+		Vsem
+		EXIT
+		Psem
+		Vsem
+Psem
+Vsem
+EXIT
+		Psem
+		Vsem
+			EXIT
