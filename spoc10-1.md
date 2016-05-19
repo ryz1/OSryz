@@ -2,8 +2,11 @@
 
 ucore操作系统中，cprintf输出的函数调用栈如下
 a. cprintf(const char \*fmt,args) 提供给上层的输出函数，调用格式与c中printf的调用格式类似。
+
 b. cprintf创建了一个参数列表后调用了vcprintf
+
 c. vcprintf调用了vprintfmt，并规定使用"cputch"函数进行输出，规定输出到stdout
+
 d. vprintfmt(void (\*putch)(int, void\*, int), int fd, void \*putdat, const char \*fmt, va_list ap)，分析格式字符串fmt，组成字符流使用给定的putch函数进行输出。putch函数决定了输出的位置。
 
 若putch=cputch，cputch会调用cons_putc
